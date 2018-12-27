@@ -11,8 +11,18 @@ const Store = PassedComponent => {
 		}
 
 		componentDidMount() {
-			// Set your fetchs/Ajax requests here.
-			// make sure you're using the store: this.state.store
+			fetch(
+				"https://wordpress-alfredoc.c9users.io/wp-json/sample_api/v1/product"
+			)
+				.then(res => res.json())
+				.then(data => {
+					let store = this.state.store;
+					store.products = data;
+					this.setState({ store });
+				})
+				.catch(err => {
+					alert(err);
+				});
 		}
 
 		render() {

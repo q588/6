@@ -60,8 +60,9 @@
 		"prop-types": "^15.6.1",
 		"query-string": "^5.1.1",
 		"react": "^16.5.2",
-		"react-polyfills": "0.0.1",
 		"react-dom": "^16.5.2",
+		"react-paypal-express-checkout": "^1.0.5",
+		"react-polyfills": "0.0.1",
 		"react-router": "^4.3.1",
 		"react-router-dom": "^4.3.1"
 	}
